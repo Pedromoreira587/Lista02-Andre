@@ -11,19 +11,19 @@ public class NumeroPrimo {
         System.out.print("Digite o numero que deseja verificar: ");
         int numero = scanner.nextInt();
 
-        boolean Primo = true; 
+        boolean numprimo = true; 
 
         if (numero <= 1) {
-            Primo = false; 
+            numprimo = false; 
         } else {
             for (int i = 2; i < numero; i++) {
                 if (numero % i == 0) {
-                    Primo = false; 
+                    numprimo = false; 
                 }
             }
         }
 
-        if (Primo) {
+        if (numprimo) {
             System.out.println("====================================");
             System.out.println(numero + " o numero digitado é primo.");
             System.out.println("====================================");
